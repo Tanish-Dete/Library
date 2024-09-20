@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Publish Books</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+ <header>
+    <h1>Library</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Books1.html">Books</a></li>
+             <li><a href="About.html">About</a></li>
+            <li><a href="Register1.Html">Register</a></li>
+            <li><a href="addBooks.html">Add & Publish  Books </a></li>
+        </ul>
+    </nav>
+    </header>
+ 
+<button id="addBookBtn" class="Button1" >Add Book</button>
+    <button id="publishBookBtn" class="Button2">Publish Book</button>
+
+    <!-- Add Book Modal -->
+    <div id="addBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAddBook">&times;</span>
+            <h2>Add Book</h2>
+            <input type="text" id="bookName" placeholder="Book Name">
+            <input type="text" id="googleDriveLink" placeholder="Google Drive Link">
+            <button id="saveBook">Save Book</button>
+        </div>
+    </div>
+
+    <!-- Publish Book Modal -->
+    <div id="publishBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closePublishBook">&times;</span>
+            <h2>Publish Book</h2>
+            <input type="text" id="publishBookName" placeholder="Book Name">
+            <input type="text" id="publishAuthorName" placeholder="Author Name">
+            <input type="date" id="publishDate">
+            <input type="text" id="publishGoogleDriveLink" placeholder="Google Drive Link">
+            <button id="publishBook">Publish Book</button>
+        </div>
+    </div>
+
+    <div id="bookList" class="Booklist">
+        <h2>Book List</h2>
+        <ul id="bookItems"></ul>
+    </div>
+
+    <div id="publishedBooks" class="Publish">
+        <h2>Published Books</h2>
+        <ul id="publishedBooksList"></ul>
+    </div>
+    <div class="video">
+    <video class="video" autoplay muted loop>
+        <source src="204243-923909579_large.mp4" type="video/mp4">
+   
+</div>
+
+ <script src="Project1.js"></script>
+</body>
+</html>
